@@ -1,0 +1,60 @@
+<mxfile host="65bd71144e">
+    <diagram id="7sHRmXHnNjhxEtxj3uA3" name="ページ1">
+        <mxGraphModel dx="1116" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="usersテーブル" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="160" width="250" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="commemtsテーブル" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="590" width="256" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="SXeEft3snWqrgHDXhQYp-21" value="&#10;&#10;content(text型,NOT NULL)&#10;prototype(references型,NOT NUL)&#10;user (references型,NOT NUL)&#10;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="8">
+                    <mxGeometry y="30" width="256" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endFill=0;endSize=30;sourcePerimeterSpacing=0;startSize=30;" edge="1" parent="1" source="SXeEft3snWqrgHDXhQYp-19">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="190" y="320" as="sourcePoint"/>
+                        <mxPoint x="334" y="665" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="215" y="665"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SXeEft3snWqrgHDXhQYp-14" value="protorypesテーブル" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="160" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="SXeEft3snWqrgHDXhQYp-15" value="&#10;title(string型,NOT NULL)&#10;catch_copy(text型,NOT NULL)&#10;cconcept(text型,NOT NULL)&#10;user(references型,NOT NULL,外部キー)&#10;&#10;※mageはActiveStorageで実装するため含まない" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="SXeEft3snWqrgHDXhQYp-14">
+                    <mxGeometry y="30" width="270" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="SXeEft3snWqrgHDXhQYp-17" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startSize=30;endSize=30;sourcePerimeterSpacing=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="SXeEft3snWqrgHDXhQYp-15" target="SXeEft3snWqrgHDXhQYp-21">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="740" y="310" as="sourcePoint"/>
+                        <mxPoint x="494" y="665" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="670" y="680"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SXeEft3snWqrgHDXhQYp-18" value="" style="fontSize=12;html=1;endArrow=ERoneToMany;startSize=30;endSize=30;sourcePerimeterSpacing=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="SXeEft3snWqrgHDXhQYp-15">
+                    <mxGeometry width="100" height="100" relative="1" as="geometry">
+                        <mxPoint x="290" y="265" as="sourcePoint"/>
+                        <mxPoint x="470" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SXeEft3snWqrgHDXhQYp-19" value="email(string型、NOT NIULL,ユニーク製薬)&lt;br&gt;encrypted_password(string型,NOT NULL)&lt;br&gt;name(string型,NOT NULL)&lt;br&gt;profile(text型,NOT NULL)&lt;br&gt;occupation(text型,NOT NULL)&lt;br&gt;position(text型,NOT NULL)" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="210" width="250" height="130" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="nQrkVlUZCGKK2Bs0WekB" name="ページ2">
+        <mxGraphModel dx="93" dy="307" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
